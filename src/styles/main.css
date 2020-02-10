@@ -193,6 +193,8 @@ body a {
   .header__div {
     width: 30%;
     top: 15px;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
   .header__div-small {
     width: 80%;
