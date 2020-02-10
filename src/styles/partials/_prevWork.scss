@@ -1,0 +1,42 @@
+.work {
+  height: 660px;
+  // background-attachment: fixed;
+  background-image: url(../assets/photos/heroImage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__heading {
+    color: $white;
+    padding-left: 5%;
+    // padding-top: 55px;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  &__small-div {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+  }
+}
+@include medium {
+  .work {
+    background-attachment: fixed;
+    &__heading {
+      margin-left: 25%;
+      padding-left: 0;
+      padding-top: 20px;
+    }
+    &__image {
+      width: 100%;
+      height: 100%;
+    }
+    &__small-div {
+      width: 50%;
+      margin: 65px 25% 0 25%;
+    }
+  }
+}

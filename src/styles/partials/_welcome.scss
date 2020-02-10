@@ -1,0 +1,13 @@
+.welcome {
+  text-align: center;
+  &__image {
+    width: 30%;
+    border-radius: 50%;
+  }
+}
+@include medium {
+  .welcome {
+    &__image {
+    }
+  }
+}

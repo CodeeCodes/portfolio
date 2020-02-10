@@ -1,0 +1,38 @@
+@charset 'utf-8';
+@import "./partials/colours";
+html,
+body {
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  color: #323232;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #e7ecef;
+  background: fixed;
+
+  a {
+    text-decoration: none;
+    color: #323232;
+  }
+}
+#root {
+  background-color: $grey;
+}
+
+/* Enforces border-box for whole site */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+@import "./partials/breakpoints";
+@import "./partials/fonts";
+@import "./partials/header";
+@import "./partials/technologies";
+@import "./partials/hero";
+@import "./partials/downArrow";
+@import "./partials/about";
+@import "./partials/welcome";
+@import "./partials/prevProjects";
+@import "./partials/prevWork";
+@import "./partials/footer";

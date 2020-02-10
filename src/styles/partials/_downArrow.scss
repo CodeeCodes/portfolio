@@ -1,0 +1,13 @@
+.arrow {
+  height: 125px;
+  width: 50%;
+  margin: 0 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: opacity(0.5);
+
+  &__image {
+    height: 30%;
+  }
+}

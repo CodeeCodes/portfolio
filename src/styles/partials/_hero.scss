@@ -1,0 +1,18 @@
+.hero {
+  width: 100vw;
+  margin-top: 120px;
+  &-image {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@include medium {
+  .hero {
+    width: 100vw;
+    &-image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
