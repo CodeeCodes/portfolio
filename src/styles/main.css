@@ -165,7 +165,7 @@ body a {
           transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1000px) {
   .header {
     width: 50%;
     height: 80px;
@@ -201,6 +201,9 @@ body a {
   }
   .header .burger {
     display: none;
+  }
+  .header #cv {
+    width: 64px;
   }
 }
 
@@ -244,7 +247,7 @@ body a {
   color: #005a9a;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1000px) {
   .tech {
     width: 50%;
     margin: 150px 25%;
@@ -276,7 +279,7 @@ body a {
   width: 100%;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1000px) {
   .hero {
     width: 100vw;
   }
@@ -313,7 +316,7 @@ body a {
   color: #005a9a;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1000px) {
   .about {
     width: 50%;
     margin: 50px 25% 210px 25%;
@@ -344,7 +347,8 @@ body a {
 }
 
 .projects__image {
-  width: 100%;
+  width: 60%;
+  margin-left: 18%;
   height: 200px;
 }
 
@@ -408,7 +412,7 @@ body a {
   background-color: #f2f4f3;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1000px) {
   .projects {
     width: 50%;
     margin: 20px 25% 0 25%;
@@ -508,7 +512,7 @@ body a {
   color: #f2f4f3;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1000px) {
   .work {
     background-attachment: fixed;
   }
@@ -588,7 +592,7 @@ body a {
   color: #f2f4f3;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1000px) {
   .footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
