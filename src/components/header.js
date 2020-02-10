@@ -12,10 +12,6 @@ export default function Header() {
     const navLinks = document.querySelectorAll(".header__div div");
     //Toggle Nav
     nav.classList.toggle("burger-active");
-    //animate NavLinks
-    navLinks.forEach((link, index) => {
-      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5}s`;
-    });
     //toggle burger
     burger.classList.toggle("toggle");
   };
