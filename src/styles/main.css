@@ -45,6 +45,7 @@ body a {
           justify-content: space-between;
   padding: 0 5%;
   background-color: #f2f4f3;
+  overflow-x: hidden;
 }
 
 .header__heading {
