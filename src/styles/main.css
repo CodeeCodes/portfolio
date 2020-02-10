@@ -344,6 +344,7 @@ body a {
 
 .projects__heading-small {
   color: #005a9a;
+  margin: 0;
 }
 
 .projects__image {
@@ -427,7 +428,7 @@ body a {
   .projects__image-svg {
     width: 40px;
     height: 40px;
-    margin: 0 10px;
+    margin: 0 30px;
   }
   .projects__image a {
     height: 100px;
@@ -472,9 +473,9 @@ body a {
     color: #005a9a;
   }
   .projects__div-button:hover {
-    padding-top: 1px;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    padding-top: 0;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     -webkit-filter: unset;
             filter: unset;
   }

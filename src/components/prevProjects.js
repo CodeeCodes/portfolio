@@ -17,7 +17,7 @@ export default function PrevProjects() {
     {
       image: `${portfolioImage}`,
       url: "https://github.com/CodeeCodes/portfolio-codee-palmer",
-      liveUrl: "https://codeecodes.github.io/portfolio-codee-palmer/",
+      liveUrl: "https://www.codeecodes.com/",
       techStack: "React, CSS, Github Pages",
       summary:
         "My first portfolio created using ReactJS and published using Github Pages. Using my foundations learnt at BrainStation Vancouver, I've built my portfolio to showcase my skills"
@@ -40,7 +40,7 @@ export default function PrevProjects() {
 
   return (
     <div className="projects">
-      <h1 className="projects__heading">Previous Projects</h1>
+      <h1 className="projects__heading">Projects</h1>
       <div className="projects__div">
         <div className="projects__div-images">
           <img
