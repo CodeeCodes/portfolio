@@ -2,7 +2,7 @@ import React from "react";
 import gitHub from "../assets/svg/github-logo.svg";
 import linkedIn from "../assets/svg/linkedin.svg";
 import pdf from "../assets/svg/pdf.svg";
-import cv from "../assets/CodeeJPalmerWebCv.pdf";
+import cv from "../assets/CodeeJPalmerWebCV.pdf";
 
 export default function Header() {
   //navSlide
