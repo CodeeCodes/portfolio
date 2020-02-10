@@ -5,6 +5,9 @@
     color: $blue;
     margin-left: 9.8%;
     margin-top: 0;
+    &-small {
+      color: $blue;
+    }
   }
   &__image {
     width: 60%;
@@ -14,9 +17,6 @@
     &-svg {
       width: 10%;
       height: 50px;
-    }
-    &-small {
-      color: $blue;
     }
   }
   &__div {
@@ -79,7 +79,7 @@
       &-svg {
         width: 40px;
         height: 40px;
-        margin-right: 10px;
+        margin: 0 10px;
       }
       a {
         height: 100px;
@@ -98,6 +98,7 @@
 
       &-images {
         display: flex;
+        flex-wrap: wrap;
       }
       &-button {
         display: flex;

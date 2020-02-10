@@ -16,7 +16,6 @@ body {
 html a,
 body a {
   text-decoration: none;
-  color: #323232;
 }
 
 #root {
@@ -202,9 +201,6 @@ body a {
   .header .burger {
     display: none;
   }
-  .header #cv {
-    width: 64px;
-  }
 }
 
 .tech {
@@ -346,6 +342,10 @@ body a {
   margin-top: 0;
 }
 
+.projects__heading-small {
+  color: #005a9a;
+}
+
 .projects__image {
   width: 60%;
   margin-left: 18%;
@@ -355,10 +355,6 @@ body a {
 .projects__image-svg {
   width: 10%;
   height: 50px;
-}
-
-.projects__image-small {
-  color: #005a9a;
 }
 
 .projects__div {
@@ -431,7 +427,7 @@ body a {
   .projects__image-svg {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
+    margin: 0 10px;
   }
   .projects__image a {
     height: 100px;
@@ -458,6 +454,8 @@ body a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .projects__div-button {
     display: -webkit-box;

@@ -48,7 +48,7 @@ export default function Header() {
         </div>
 
         <div className="header__div-small">
-          <a href={cv} className="header__menu-link" download id="cv">
+          <a href={cv} className="header__menu-link" download>
             <img src={pdf} alt="cv" className="header__menu-link-image" />
             <h5 className="header__menu-link-heading">CV</h5>
           </a>
