@@ -312,6 +312,10 @@ body a {
   color: #005a9a;
 }
 
+.about__text {
+  text-align: center;
+}
+
 @media only screen and (min-width: 1000px) {
   .about {
     width: 50%;

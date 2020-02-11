@@ -2,6 +2,9 @@
   margin: 20px 5%;
   bottom: 662px;
   color: $blue;
+  &__text {
+    text-align: center;
+  }
 }
 @include medium {
   .about {
