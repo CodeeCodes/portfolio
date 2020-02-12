@@ -60,6 +60,7 @@ body a {
 .header__menu-link {
   height: 40px;
   width: 50%;
+  cursor: pointer;
 }
 
 .header__menu-link-heading {
@@ -342,7 +343,6 @@ body a {
 
 .projects__heading {
   color: #005a9a;
-  margin-left: 9.8%;
   margin-top: 0;
 }
 
@@ -374,6 +374,10 @@ body a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #005a9a;
+}
+
+.projects__div-button {
+  cursor: pointer;
 }
 
 .projects .slider {

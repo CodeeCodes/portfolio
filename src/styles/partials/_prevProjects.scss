@@ -3,7 +3,6 @@
 
   &__heading {
     color: $blue;
-    margin-left: 9.8%;
     margin-top: 0;
     &-small {
       color: $blue;
@@ -28,6 +27,9 @@
     display: flex;
     flex-wrap: wrap;
     color: $blue;
+    &-button {
+      cursor: pointer;
+    }
   }
   .slider {
     margin-top: 15px;
