@@ -162,7 +162,6 @@ export default function PrevProjects() {
     const track = document.querySelector(".carousel__track");
     const currentSlide = track.querySelector(".current-slide");
     const prevSlide = currentSlide.previousElementSibling;
-    const nextSlide = currentSlide.nextElementSibling;
     const amountToMove = prevSlide.style.left;
     currentSlide.classList.remove("current-slide");
     prevSlide.classList.add("current-slide");
@@ -173,7 +172,6 @@ export default function PrevProjects() {
     currentSlide.style.opacity = "0";
     prevSlide.style.opacity = "1";
     moveToSlide(track, currentSlide, prevSlide);
-    console.log(amountToMove);
   };
 
   //when I click right move slides to the right
@@ -196,51 +194,45 @@ export default function PrevProjects() {
   //when clicked on nav indicator, move to that slide
   const changeDots = e => {
     e.persist();
+
     //which indicator is clicked
     console.log(e);
     const targetDot = e.target.closest("button");
     if (!targetDot) return;
-    // const track = document.querySelector(".carousel__track");
-    // const slides = Array.from(track.children);
     const dotNav = document.querySelector(".carousel__nav");
     const dots = Array.from(dotNav.children);
     const targetIndex = dots.findIndex(dot => dot === targetDot);
-    // const targetSlide = slides[targetIndex];
     console.log(targetIndex);
     e.target.style.background = "lightBlue";
-    e.target.style.opacity = "1";
-    // changeDots(currentSlide, targetDot);
   };
 
   //hiding arrows if at end of carousel
-  //   const hideArrows = e => {
-  //     const track = document.querySelector(".carousel__track");
-  //     const slides = Array.from(track.children);
-  //     const dotNav = document.querySelector(".carousel__track");
-  //     const dots = Array.from(dotNav.children);
-  //     const targetDot = e.target.closest("button");
-  //     const targetIndex = dots.findIndex(dot => dot === targetDot);
-  //     const prevButton = document.querySelector(".carousel__button--left");
-  //     const nextButton = document.querySelector(".carousel__button--right");
-  //     console.log(prevButton);
-  //     if (targetIndex === 0) {
-  //       prevButton.classList.add("is-hidden");
-  //       nextButton.classList.remove("is-hidden");
-  //     } else if (targetIndex === slides.length - 1) {
-  //       prevButton.classList.add("is-hidden");
-  //       nextButton.classList.remove("is-hidden");
-  //     } else {
-  //       prevButton.classList.add("is-hidden");
-  //       nextButton.classList.remove("is-hidden");
-  //     }
-  //   };
+  const hideArrows = () => {
+    const track = document.querySelector(".carousel__track");
+    const slides = Array.from(track.children);
+    const currentSlide = track.querySelector(".current-slide");
+    const prevSlide = currentSlide.previousElementSibling;
+    const prevButton = document.querySelector(".carousel__button--left");
+    const nextButton = document.querySelector(".carousel__button--right");
+    console.log(slides[0].attributes);
+    if (currentSlide.previousSibling === null) {
+      prevButton.classList.add("is-hidden");
+      nextButton.classList.remove("is-hidden");
+    } else if (currentSlide.nextSibling === null) {
+      nextButton.classList.add("is-hidden");
+      prevButton.classList.remove("is-hidden");
+    }
+  };
 
   return (
     <div className="carousel">
       <h1 className="projects__heading">Projects</h1>
       <button
         className="carousel__button carousel__button--left is-hidden"
-        onClick={moveLeft}
+        onClick={() => {
+          hideArrows();
+          moveLeft();
+        }}
       >
         <img src={prevSvg} alt="" />
       </button>
@@ -251,15 +243,18 @@ export default function PrevProjects() {
       </div>
       <button
         className="carousel__button carousel__button--right"
-        onClick={moveRight}
+        onClick={() => {
+          hideArrows();
+          moveRight();
+        }}
       >
         <img src={nextSvg} alt="" />
       </button>
-      {/* <div className="carousel__nav">
+      <div className="carousel__nav">
         <button className="carousel__indicator" onClick={changeDots}></button>
         <button className="carousel__indicator" onClick={changeDots}></button>
         <button className="carousel__indicator" onClick={changeDots}></button>
-      </div> */}
+      </div>
     </div>
   );
 }
