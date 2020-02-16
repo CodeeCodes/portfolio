@@ -4,15 +4,22 @@
   &__heading {
     color: $blue;
     margin-top: 0;
+
     &-small {
       color: $blue;
       margin: 0;
+      &-main {
+        margin-left: 0;
+        margin-top: 20px;
+        color: $blue;
+      }
     }
   }
   &__image {
     width: 60%;
     margin-left: 18%;
     height: 200px;
+    object-fit: contain;
 
     &-svg {
       width: 10%;
@@ -22,7 +29,7 @@
   &__div {
     background: #fff;
     border-radius: 25px;
-    box-shadow: 1px 1px 25px -5px;
+    box-shadow: 1px 1px 7px -6px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -30,31 +37,6 @@
     &-button {
       cursor: pointer;
     }
-  }
-  .slider {
-    margin-top: 15px;
-    display: flex;
-  }
-  span {
-    height: 20px;
-    width: 20px;
-    margin: 0 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  span::before {
-    content: "";
-    height: 15px;
-    width: 15px;
-    background-color: $blue;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-  }
-
-  span:hover::before {
-    background-color: $white;
   }
 }
 
@@ -66,12 +48,19 @@
     &__heading {
       color: $blue;
       margin: 10px;
+      margin-left: 21%;
+      &-small {
+        &-main {
+          margin-left: 11%;
+        }
+      }
     }
     &__image {
       width: 60%;
       height: 300px;
       transition: ease 0.5s;
       z-index: 1;
+      margin-left: 24%;
 
       // &:hover {
       //   transform: scale(2.5);
@@ -98,24 +87,30 @@
       display: flex;
       flex-wrap: unset;
       color: $blue;
+      margin: 0 5%;
 
       &-images {
         display: flex;
         flex-wrap: wrap;
+        width: 76%;
+        margin-left: 9%;
       }
       &-button {
         display: flex;
-        justify-content: center;
+        margin-left: 30%;
         align-items: center;
         transition: ease 0.4s;
         color: $blue;
 
         &:hover {
           padding-top: 0;
-          transform: scale(1.1);
+          transform: scale(1.012);
           filter: unset;
         }
       }
+    }
+    &__div-move {
+      width: 100%;
     }
   }
 }
