@@ -27,6 +27,7 @@
     width: 100%;
   }
   &__button {
+    z-index: 111;
     background-color: $grey;
     color: $blue;
     border: 0;

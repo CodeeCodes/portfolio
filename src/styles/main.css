@@ -371,6 +371,7 @@ body a {
 }
 
 .carousel__button {
+  z-index: 111;
   background-color: #f4f4f4;
   color: #005a9a;
   border: 0;
@@ -538,6 +539,7 @@ body a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #005a9a;
+  margin-bottom: 10px;
 }
 
 .projects__div-button {

@@ -250,11 +250,11 @@ export default function PrevProjects() {
       >
         <img src={nextSvg} alt="" />
       </button>
-      <div className="carousel__nav">
+      {/* <div className="carousel__nav">
         <button className="carousel__indicator" onClick={changeDots}></button>
         <button className="carousel__indicator" onClick={changeDots}></button>
         <button className="carousel__indicator" onClick={changeDots}></button>
-      </div>
+      </div> */}
     </div>
   );
 }
