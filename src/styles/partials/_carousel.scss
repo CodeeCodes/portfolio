@@ -34,6 +34,7 @@
     position: absolute;
     bottom: -60px;
     transform: translateY(-50%);
+    margin-top: 10px;
     &--left {
       width: 40px;
       height: 40px;
@@ -41,7 +42,6 @@
     }
     &--right {
       width: 40px;
-      height: 40px;
       right: -5px;
     }
     & img {
