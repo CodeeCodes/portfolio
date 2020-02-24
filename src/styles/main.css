@@ -389,6 +389,7 @@ body a {
 }
 
 .carousel__button--right {
+  height: 40px;
   width: 40px;
   right: -5px;
 }
