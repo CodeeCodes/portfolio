@@ -138,10 +138,11 @@ export default function PrevProjects() {
   const refInput = useRef();
   const slider = () => {
     const track = document.querySelector(".carousel__track");
+
     //create array from children of div class .carousel__track
     const slides = Array.from(track.children);
-    console.log(slides);
     const slideWidth = slides[0].getBoundingClientRect().width;
+
     //Arrange slide so that they are next to each other
     const setSlidePosition = (slide, index) => {
       slide.style.left = slideWidth * index + "px";
@@ -196,13 +197,13 @@ export default function PrevProjects() {
     e.persist();
 
     //which indicator is clicked
-    console.log(e);
+
     const targetDot = e.target.closest("button");
     if (!targetDot) return;
     const dotNav = document.querySelector(".carousel__nav");
     const dots = Array.from(dotNav.children);
     const targetIndex = dots.findIndex(dot => dot === targetDot);
-    console.log(targetIndex);
+
     e.target.style.background = "lightBlue";
   };
 
@@ -214,7 +215,7 @@ export default function PrevProjects() {
     const prevSlide = currentSlide.previousElementSibling;
     const prevButton = document.querySelector(".carousel__button--left");
     const nextButton = document.querySelector(".carousel__button--right");
-    console.log(slides[0].attributes);
+
     if (currentSlide.previousSibling === null) {
       prevButton.classList.add("is-hidden");
       nextButton.classList.remove("is-hidden");
