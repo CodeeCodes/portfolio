@@ -41,7 +41,6 @@ export default function PrevProjects() {
   const galleryImage =
     projects.map &&
     projects.map((current, index) => {
-      console.log(index);
       if (index === 0) {
         return (
           <li className="carousel__slide current-slide" key={index}>
