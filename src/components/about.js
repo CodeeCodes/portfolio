@@ -8,7 +8,7 @@ export default function About() {
       <h1 className="about__heading">About Me</h1>
       <Welcome />
       <h4 className="about__text">
-        Innovative optimized solution seeker | Full-Stack Web Developer |
+        | Full-Stack Web Developer | Innovative optimized solution seeker |
         Ambitious and fast learning, committed to achieving high levels of
         success, meeting tight deadlines, and consistently delivering superior
         performance |

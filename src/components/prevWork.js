@@ -6,8 +6,8 @@ export default function PrevWork() {
       <h1 className="work__heading">Prior Work Experience</h1>
       <div className="work__small-div">
         <h5 className="work__heading-small">
-          Freelance Web Developer | Self-employed October 2018 - Present, San
-          Diego,CA
+          Freelance Web Developer | Self-employed October 2018 - Present,
+          Vancouver, BC
         </h5>
         <p className="work__text">
           Both personal and Professional freelance work. Currently working on a
