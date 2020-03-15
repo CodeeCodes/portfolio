@@ -20,7 +20,7 @@
   }
   &__menu {
     &-link {
-      height: 40px;
+      height: fit-content;
       width: 50%;
       cursor: pointer;
       &-heading {
@@ -31,7 +31,7 @@
         // filter: opacity(0.5);
         transition: ease 0.5s;
         height: 100%;
-        width: 100%;
+        width: 50%;
 
         &:hover {
           filter: unset;
@@ -44,13 +44,16 @@
   &__div {
     display: flex;
     justify-content: space-around;
-    // position: absolute;
     right: 15px;
-    height: 40px;
+    height: fit-content;
     top: 20vw;
     transform: translateY(-300%);
-    // opacity: 0;
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
+    opacity: 0;
+    &--active {
+      transition: transform 1s ease;
+      opacity: 1;
+    }
 
     &-small {
       width: 100%;

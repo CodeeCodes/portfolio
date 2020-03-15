@@ -9,9 +9,10 @@ export default function Header() {
   const navSlide = () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".header__div");
-    const navLinks = document.querySelectorAll(".header__div div");
+    const navLinks = document.querySelector(".header__div");
     //Toggle Nav
     nav.classList.toggle("burger-active");
+    navLinks.classList.toggle("header__div--active");
     //toggle burger
     burger.classList.toggle("toggle");
   };
@@ -23,36 +24,35 @@ export default function Header() {
         <h5 className="header__heading-small">Full-stack Web Developer</h5>
       </div>
       <div className="header__div">
-        <div className="header__div-small">
-          <a href="https://github.com/CodeeCodes" className="header__menu-link">
+        <a href="https://github.com/CodeeCodes" className="header__menu-link">
+          <div className="header__div-small">
             <img
               src={gitHub}
               alt="github"
               className="header__menu-link-image"
             />
             <h5 className="header__menu-link-heading">GitHub</h5>
-          </a>
-        </div>
-        <div className="header__div-small">
-          <a
-            href="https://www.linkedin.com/in/codeepalmer/"
-            className="header__menu-link"
-          >
+          </div>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/codeepalmer/"
+          className="header__menu-link"
+        >
+          <div className="header__div-small">
             <img
               src={linkedIn}
               alt="linkedIn"
               className="header__menu-link-image"
             />
             <h5 className="header__menu-link-heading">linkedIn</h5>
-          </a>
-        </div>
-
-        <div className="header__div-small">
-          <a href={cv} className="header__menu-link" download>
+          </div>
+        </a>
+        <a href={cv} className="header__menu-link" download>
+          <div className="header__div-small">
             <img src={pdf} alt="cv" className="header__menu-link-image" />
             <h5 className="header__menu-link-heading">CV</h5>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
       <div className="burger" onClick={navSlide}>
         <div className="lineOne"></div>

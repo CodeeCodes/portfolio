@@ -58,7 +58,9 @@ body a {
 }
 
 .header__menu-link {
-  height: 40px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 50%;
   cursor: pointer;
 }
@@ -72,7 +74,7 @@ body a {
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
   height: 100%;
-  width: 100%;
+  width: 50%;
 }
 
 .header__menu-link-image:hover {
@@ -90,14 +92,25 @@ body a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   right: 15px;
-  height: 40px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   top: 20vw;
   -webkit-transform: translateY(-300%);
           transform: translateY(-300%);
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  opacity: 0;
+}
+
+.header__div--active {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+  opacity: 1;
 }
 
 .header__div-small {
@@ -700,6 +713,7 @@ body a {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin: 0;
 }
 
 .footer__heading-link {
@@ -710,6 +724,15 @@ body a {
   text-decoration: none;
   color: #005a9a;
   font-size: 10px;
+  margin: 0;
+}
+
+.footer__text {
+  font-size: 12px;
+  margin: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media only screen and (min-width: 1000px) {
