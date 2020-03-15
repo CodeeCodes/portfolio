@@ -114,6 +114,9 @@ body a {
 }
 
 .header__div-small {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px 5px 3px;
   text-align: center;
 }
 
