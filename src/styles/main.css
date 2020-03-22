@@ -547,9 +547,6 @@ body a {
 
 .projects__div {
   background: #fff;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   border-radius: 25px;
   -webkit-box-shadow: 1px 1px 7px -6px;
           box-shadow: 1px 1px 7px -6px;
@@ -565,6 +562,31 @@ body a {
 
 .projects__div-button {
   cursor: pointer;
+}
+
+.projects span {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: url("../assets/photos/me-meme.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 5px;
+  border-radius: 50%;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.projects span:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.projects .slider {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 1000px) {
