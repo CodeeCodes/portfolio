@@ -24,39 +24,6 @@ export default function Footer() {
           www.github.com/codeecodes
         </a>
       </p>
-
-      <div
-        itemscope
-        itemtype="http://schema.org/Person"
-        class="fiverr-seller-widget"
-      >
-        <a
-          itemprop="url"
-          href="https://www.fiverr.com/codeecodes"
-          rel="nofollow"
-          target="_blank"
-        >
-          <div
-            class="fiverr-seller-content"
-            id="fiverr-seller-widget-content-e364cc24-2558-4971-b09f-265ea4eb7bd5"
-            itemprop="contentURL"
-          ></div>
-          <div id="fiverr-widget-seller-data">
-            <div itemprop="name">codeecodes</div>
-            <div itemscope itemtype="http://schema.org/Organization">
-              <span itemprop="name">Fiverr</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <script
-        id="fiverr-seller-widget-script-e364cc24-2558-4971-b09f-265ea4eb7bd5"
-        src="https://widgets.fiverr.com/api/v1/seller/codeecodes?widget_id=e364cc24-2558-4971-b09f-265ea4eb7bd5"
-        data-config='{"category_name":"Programming \u0026 Tech"}'
-        async="true"
-        defer="true"
-      ></script>
     </div>
   );
 }
