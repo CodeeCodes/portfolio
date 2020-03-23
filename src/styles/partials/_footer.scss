@@ -1,11 +1,12 @@
 .footer {
-  margin: 0 5%;
-  color: $blue;
-  background-color: $white;
+  padding: 0 5%;
+  color: $white;
+  background-color: $blue;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   height: 200px;
+
   &__heading {
     font-size: 16px;
     height: fit-content;
@@ -14,7 +15,7 @@
       height: fit-content;
       width: 55%;
       text-decoration: none;
-      color: $blue;
+      color: $white;
       font-size: 10px;
       margin: 0;
     }
@@ -28,8 +29,8 @@
 @include medium {
   .footer {
     flex-direction: column;
-    margin: 0px 25%;
-    width: 50%;
+    padding: 0px 25%;
+    margin-top: 30px;
     height: 300px;
     &__heading {
       font-size: 20px;

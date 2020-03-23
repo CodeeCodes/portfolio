@@ -1,18 +1,28 @@
 .about {
-  margin: 20px 5%;
-  bottom: 662px;
-  color: $blue;
+  height: 660px;
+  background-attachment: fixed;
+  background-image: url(../assets/photos/heroImage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
   &__text {
     text-align: center;
   }
 }
 @include medium {
   .about {
-    width: 50%;
-    margin: 50px auto;
+    // width: 50%;
+    padding: 50px auto;
     bottom: 800px;
     &__heading {
       margin-top: 0;
+    }
+    &__div {
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 275px;
     }
   }
 }
