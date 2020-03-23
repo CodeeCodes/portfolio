@@ -27,16 +27,18 @@
 }
 @include medium {
   .footer {
-    flex-direction: row;
+    flex-direction: column;
     margin: 0px 25%;
     width: 50%;
     height: 300px;
-
     &__heading {
-      width: 55%;
       font-size: 20px;
+      margin: 65px auto;
+
       &-link {
         font-size: 14px;
+        width: unset;
+        margin: 20px auto;
       }
     }
   }

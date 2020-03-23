@@ -116,7 +116,7 @@ body a {
 .header__div-small {
   width: 50px;
   height: 50px;
-  margin: 0 5px 5px 3px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -261,7 +261,7 @@ body a {
 @media only screen and (min-width: 1000px) {
   .tech {
     width: 50%;
-    margin: 150px 25%;
+    margin: 150px auto;
   }
   .tech__image {
     width: unset;
@@ -334,7 +334,7 @@ body a {
 @media only screen and (min-width: 1000px) {
   .about {
     width: 50%;
-    margin: 50px 25% 210px 25%;
+    margin: 50px auto;
     bottom: 800px;
   }
   .about__heading {
@@ -548,8 +548,6 @@ body a {
 .projects__div {
   background: #fff;
   border-radius: 25px;
-  -webkit-box-shadow: 1px 1px 7px -6px;
-          box-shadow: 1px 1px 7px -6px;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,6 +558,10 @@ body a {
   margin-bottom: 10px;
 }
 
+.projects__div a {
+  width: 50%;
+}
+
 .projects__div-button {
   cursor: pointer;
 }
@@ -568,14 +570,12 @@ body a {
   height: 20px;
   width: 20px;
   display: inline-block;
-  background: url("../assets/photos/me-meme.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: #005a9a;
   margin: 5px;
   border-radius: 50%;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
+  cursor: pointer;
 }
 
 .projects span:hover {
@@ -586,18 +586,18 @@ body a {
 .projects .slider {
   width: 50%;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 @media only screen and (min-width: 1000px) {
   .projects {
-    width: 50%;
-    margin: 20px 25% 0 25%;
+    width: 80%;
+    margin: 20px auto;
   }
   .projects__heading {
     color: #005a9a;
     margin: 10px;
-    margin-left: 21%;
+    margin-left: 18.4%;
   }
   .projects__heading-small-main {
     margin-left: 11%;
@@ -763,20 +763,22 @@ body a {
 
 @media only screen and (min-width: 1000px) {
   .footer {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0px 25%;
     width: 50%;
     height: 300px;
   }
   .footer__heading {
-    width: 55%;
     font-size: 20px;
+    margin: 65px auto;
   }
   .footer__heading-link {
     font-size: 14px;
+    width: unset;
+    margin: 20px auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

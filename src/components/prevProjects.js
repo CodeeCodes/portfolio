@@ -35,7 +35,10 @@ export default function PrevProjects() {
   const [active, setActive] = useState(0);
   const handleSetClick = event => {
     setCurrent(projects[event.target.getAttribute("data-projects")]);
-    setActive(event.target.getAttribute("data-projects"));
+    setActive(
+      event.target.getAttribute("data-projects"),
+      event.target.setAttribute("class", "active")
+    );
   };
 
   return (

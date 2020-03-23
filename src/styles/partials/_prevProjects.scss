@@ -29,12 +29,15 @@
   &__div {
     background: #fff;
     border-radius: 25px;
-    box-shadow: 1px 1px 7px -6px;
+    // box-shadow: 1px 1px 7px -6px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     color: $blue;
     margin-bottom: 10px;
+    & a {
+      width: 50%;
+    }
     &-button {
       cursor: pointer;
     }
@@ -43,13 +46,11 @@
     height: 20px;
     width: 20px;
     display: inline-block;
-    background: url("../assets/photos/me-meme.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: $blue;
     margin: 5px;
     border-radius: 50%;
     transition: ease 0.5s;
+    cursor: pointer;
     &:hover {
       transform: scale(1.2);
     }
@@ -57,19 +58,19 @@
   & .slider {
     width: 50%;
     text-align: center;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 }
 
 @include medium {
   .projects {
-    width: 50%;
-    margin: 20px 25% 0 25%;
+    width: 80%;
+    margin: 20px auto;
 
     &__heading {
       color: $blue;
       margin: 10px;
-      margin-left: 21%;
+      margin-left: 18.4%;
       &-small {
         &-main {
           margin-left: 11%;
@@ -82,12 +83,6 @@
       transition: ease 0.5s;
       z-index: 1;
       margin-left: 24%;
-
-      // &:hover {
-      //   transform: scale(2.5);
-      //   margin-top: 10px;
-      //   margin-left: 190px;
-      // }
 
       &-svg {
         width: 40px;
