@@ -281,7 +281,7 @@ body a {
 
 .hero {
   width: 100vw;
-  margin-top: 120px;
+  margin-top: 20px;
 }
 
 .hero-image {
@@ -322,7 +322,6 @@ body a {
 }
 
 .about {
-  height: 660px;
   background-attachment: fixed;
   background-image: url(../assets/photos/heroImage.jpg);
   background-position: center;
@@ -337,6 +336,7 @@ body a {
 
 @media only screen and (min-width: 1000px) {
   .about {
+    height: 660px;
     padding: 50px auto;
     bottom: 800px;
   }
@@ -353,6 +353,7 @@ body a {
 
 .welcome {
   text-align: center;
+  padding-top: 10px;
 }
 
 .welcome__image {

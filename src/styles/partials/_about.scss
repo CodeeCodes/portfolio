@@ -1,5 +1,5 @@
 .about {
-  height: 660px;
+  // height: 660px;
   background-attachment: fixed;
   background-image: url(../assets/photos/heroImage.jpg);
   background-position: center;
@@ -12,7 +12,7 @@
 }
 @include medium {
   .about {
-    // width: 50%;
+    height: 660px;
     padding: 50px auto;
     bottom: 800px;
     &__heading {
