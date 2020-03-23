@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import victoryImage from "../assets/photos/victoryPropertyBuyersMockup.png";
 import capstoneImage from "../assets/photos/capstone-mock.png";
 import portfolioImage from "../assets/photos/portfolio.png";
 import particleImage from "../assets/photos/particle.png";
@@ -7,6 +8,14 @@ import liveImage from "../assets/svg/live.svg";
 
 export default function PrevProjects() {
   const [projects, setProjects] = useState([
+    {
+      image: `${victoryImage}`,
+      url: "https://github.com/CodeeCodes/victorypropertybuyers",
+      liveUrl: "",
+      techStack: "WordPress, PHP, CSS/SASS",
+      summary:
+        "Professional Real Estate WordPress site, created with a custom theme that I programmed using PHP and WordPress. Also utilizing SASS for styling purposes. Using Local by FlyWheel as my local host. And preparing to deploy using BlueHost "
+    },
     {
       image: `${capstoneImage}`,
       url: "https://github.com/CodeeCodes/capstone-codee-palmer",
