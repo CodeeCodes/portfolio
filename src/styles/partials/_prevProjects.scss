@@ -32,6 +32,7 @@
     flex-wrap: wrap;
     color: $blue;
     margin-bottom: 10px;
+    box-shadow: 1px 1px 25px -5px;
     & a {
       width: 50%;
     }
@@ -47,25 +48,31 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      width: 100%;
     }
   }
   & span {
-    height: 20px;
-    width: 20px;
-    display: inline-block;
-    background-color: $blue;
-    margin: 5px;
-    border-radius: 50%;
-    transition: ease 0.5s;
-    cursor: pointer;
-    &:hover {
-      transform: scale(1.2);
-    }
   }
   & .slider {
     width: 50%;
     text-align: center;
     margin: 20px auto;
+    &__button {
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      background-color: $blue;
+      margin: 5px;
+      border-radius: 50%;
+      transition: ease 0.5s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.2);
+      }
+      & .active {
+        background-color: #fff;
+      }
+    }
   }
 }
 
@@ -102,8 +109,6 @@
       flex-direction: column;
       background: #fff;
       margin-bottom: 40px;
-      box-shadow: 1px 1px 25px -5px;
-      padding: 10px;
       display: flex;
       flex-wrap: unset;
 
@@ -117,8 +122,8 @@
         }
       }
       &-small {
-        width: 85%;
-        margin: 0 auto;
+        // width: 85%;
+        // margin: 0 auto;
       }
     }
     &__div-move {

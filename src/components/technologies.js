@@ -6,6 +6,8 @@ import reactSvg from "../assets/svg/tech-svg/react.svg";
 import jsSvg from "../assets/svg/tech-svg/javascript.svg";
 import sassSvg from "../assets/svg/tech-svg/sass.svg";
 import nodeSvg from "../assets/svg/tech-svg/nodejs.svg";
+import wordPressSvg from "../assets/svg/tech-svg/wordpress.svg";
+import phpSvg from "../assets/svg/tech-svg/php.svg";
 
 export default function Technologies() {
   return (
@@ -17,6 +19,22 @@ export default function Technologies() {
           <h5 className="tech__image-heading">javascript</h5>
         </div>
         <div className="tech__image-div-small">
+          <img src={reactSvg} alt="github" className="tech__image" />
+          <h5 className="tech__image-heading">ReactJS</h5>
+        </div>
+        <div className="tech__image-div-small">
+          <img src={wordPressSvg} alt="github" className="tech__image" />
+          <h5 className="tech__image-heading">WordPress</h5>
+        </div>
+        <div className="tech__image-div-small">
+          <img src={phpSvg} alt="github" className="tech__image" />
+          <h5 className="tech__image-heading">PHP</h5>
+        </div>
+        <div className="tech__image-div-small">
+          <img src={nodeSvg} alt="github" className="tech__image" />
+          <h5 className="tech__image-heading">NodeJS</h5>
+        </div>
+        <div className="tech__image-div-small">
           <img src={htmlSvg} alt="github" className="tech__image" />
           <h5 className="tech__image-heading">HTML5</h5>
         </div>
@@ -24,18 +42,12 @@ export default function Technologies() {
           <img src={cssSvg} alt="github" className="tech__image" />
           <h5 className="tech__image-heading">CSS</h5>
         </div>
-        <div className="tech__image-div-small">
-          <img src={reactSvg} alt="github" className="tech__image" />
-          <h5 className="tech__image-heading">ReactJS</h5>
-        </div>
+
         <div className="tech__image-div-small">
           <img src={sassSvg} alt="github" className="tech__image" />
           <h5 className="tech__image-heading">SASS</h5>
         </div>
-        <div className="tech__image-div-small">
-          <img src={nodeSvg} alt="github" className="tech__image" />
-          <h5 className="tech__image-heading">NodeJS</h5>
-        </div>
+
         <div className="tech__image-div-small">
           <img src={gitHubSvg} alt="github" className="tech__image" />
           <h5 className="tech__image-heading">Github/Git</h5>

@@ -44,10 +44,9 @@ export default function PrevProjects() {
   const [active, setActive] = useState(0);
   const handleSetClick = event => {
     setCurrent(projects[event.target.getAttribute("data-projects")]);
-    setActive(
-      event.target.getAttribute("data-projects"),
-      event.target.setAttribute("class", "active")
-    );
+    setActive(event.target.getAttribute("data-projects"));
+    let click = document.querySelector(".slider__button");
+    click.classList.toggle("active");
   };
 
   return (
@@ -95,6 +94,7 @@ export default function PrevProjects() {
               onClick={event => handleSetClick(event)}
               data-projects={index}
               key={index}
+              className="slider__button"
             />
           );
         })}
