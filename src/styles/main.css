@@ -67,7 +67,7 @@ body a {
 
 .header__menu-link-heading {
   color: #005a9a;
-  margin: 0;
+  margin: 0 1px;
 }
 
 .header__menu-link-image {
@@ -80,8 +80,8 @@ body a {
 .header__menu-link-image:hover {
   -webkit-filter: unset;
           filter: unset;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   margin-bottom: 10px;
 }
 
@@ -180,9 +180,9 @@ body a {
 
 @media only screen and (min-width: 1000px) {
   .header {
-    width: 50%;
+    width: 55%;
     padding: 0;
-    margin: 0 25%;
+    margin: 0 auto;
   }
   .header__heading {
     margin: 10px 0;
@@ -259,7 +259,7 @@ body a {
 
 @media only screen and (min-width: 1000px) {
   .tech {
-    width: 50%;
+    width: 55%;
     margin: 150px auto;
   }
   .tech__image {
@@ -322,7 +322,6 @@ body a {
 }
 
 .about {
-  background-attachment: fixed;
   background-image: url(../assets/photos/heroImage.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -347,7 +346,7 @@ body a {
     width: 50%;
     margin: 0 auto;
     padding-top: 10px;
-    padding-bottom: 275px;
+    padding-bottom: 320px;
   }
 }
 
@@ -545,8 +544,6 @@ body a {
 }
 
 .projects__image {
-  width: 60%;
-  margin-left: 18%;
   height: 200px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -559,7 +556,7 @@ body a {
 
 .projects__div {
   background: #fff;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,6 +573,29 @@ body a {
 
 .projects__div-button {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  color: #005a9a;
+}
+
+.projects__div-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects span {
@@ -603,13 +623,12 @@ body a {
 
 @media only screen and (min-width: 1000px) {
   .projects {
-    width: 60%;
+    width: 55%;
     margin: 20px auto;
   }
   .projects__heading {
     color: #005a9a;
     margin: 10px;
-    margin-left: 18.4%;
   }
   .projects__heading-small-main {
     margin-left: 11%;
@@ -620,12 +639,11 @@ body a {
     -webkit-transition: ease 0.5s;
     transition: ease 0.5s;
     z-index: 1;
-    margin-left: 24%;
   }
   .projects__image-svg {
     width: 40px;
     height: 40px;
-    margin: 0 30px;
+    margin-right: 5%;
   }
   .projects__image a {
     height: 100px;
@@ -636,7 +654,6 @@ body a {
         -ms-flex-direction: column;
             flex-direction: column;
     background: #fff;
-    border-radius: 25px;
     margin-bottom: 40px;
     -webkit-box-shadow: 1px 1px 25px -5px;
             box-shadow: 1px 1px 25px -5px;
@@ -646,29 +663,6 @@ body a {
     display: flex;
     -ms-flex-wrap: unset;
         flex-wrap: unset;
-    color: #005a9a;
-    margin: 0 5%;
-  }
-  .projects__div-images {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 76%;
-    margin-left: 9%;
-  }
-  .projects__div-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 30%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-transition: ease 0.4s;
-    transition: ease 0.4s;
-    color: #005a9a;
   }
   .projects__div-button:hover {
     padding-top: 0;
@@ -712,8 +706,11 @@ body a {
 }
 
 @media only screen and (min-width: 1000px) {
+  .work {
+    width: 55%;
+    margin: 0 auto;
+  }
   .work__heading {
-    margin-left: 25%;
     padding-left: 0;
     padding-top: 20px;
   }
@@ -722,7 +719,6 @@ body a {
     height: 100%;
   }
   .work__small-div {
-    width: 55%;
     margin: 30px auto;
   }
 }

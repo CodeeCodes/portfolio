@@ -60,6 +60,22 @@ export default function PrevProjects() {
             alt="capstone-mock"
             className="projects__image"
           />
+          {/* <a href={current.liveUrl}>
+            <div className="projects__div-button">
+              <img
+                src={liveImage}
+                alt="github-logo"
+                className="projects__image-svg"
+              />
+              <h3 className="projects__heading-small">View Site</h3>
+            </div>
+          </a> */}
+        </div>
+        <div className="projects__div-small">
+          <h3 className="projects__summary-heading">Tech-stack:</h3>
+          <p className="projects__tech">{current.techStack}</p>
+          <h3 className="projects__summary-heading"> SUMMARY:</h3>
+          <p className="projects__summary">{current.summary}</p>
           <a href={current.url}>
             <div className="projects__div-button">
               <img
@@ -70,22 +86,6 @@ export default function PrevProjects() {
               <h3 className="projects__heading-small">View Source Code</h3>
             </div>{" "}
           </a>
-          <a href={current.liveUrl}>
-            <div className="projects__div-button">
-              <img
-                src={liveImage}
-                alt="github-logo"
-                className="projects__image-svg"
-              />
-              <h3 className="projects__heading-small">View Site</h3>
-            </div>
-          </a>
-        </div>
-        <div className="projects__div-small">
-          <h3 className="projects__summary-heading">Tech-stack:</h3>
-          <p className="projects__tech">{current.techStack}</p>
-          <h3 className="projects__summary-heading"> SUMMARY:</h3>
-          <p className="projects__summary">{current.summary}</p>
         </div>
       </div>
       <div className="slider">

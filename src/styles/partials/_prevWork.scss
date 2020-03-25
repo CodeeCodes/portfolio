@@ -19,8 +19,9 @@
 }
 @include medium {
   .work {
+    width: 55%;
+    margin: 0 auto;
     &__heading {
-      margin-left: 25%;
       padding-left: 0;
       padding-top: 20px;
     }
@@ -29,7 +30,6 @@
       height: 100%;
     }
     &__small-div {
-      width: 55%;
       margin: 30px auto;
     }
   }

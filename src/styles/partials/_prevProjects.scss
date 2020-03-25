@@ -16,8 +16,6 @@
     }
   }
   &__image {
-    width: 60%;
-    margin-left: 18%;
     height: 200px;
     object-fit: contain;
 
@@ -28,8 +26,7 @@
   }
   &__div {
     background: #fff;
-    border-radius: 25px;
-    // box-shadow: 1px 1px 7px -6px;
+    border-radius: 5px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +37,16 @@
     }
     &-button {
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: ease 0.4s;
+      color: $blue;
+    }
+    &-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
   }
   & span {
@@ -64,13 +71,12 @@
 
 @include medium {
   .projects {
-    width: 60%;
+    width: 55%;
     margin: 20px auto;
 
     &__heading {
       color: $blue;
       margin: 10px;
-      margin-left: 18.4%;
       &-small {
         &-main {
           margin-left: 11%;
@@ -82,12 +88,11 @@
       height: 300px;
       transition: ease 0.5s;
       z-index: 1;
-      margin-left: 24%;
 
       &-svg {
         width: 40px;
         height: 40px;
-        margin: 0 30px;
+        margin-right: 5%;
       }
       a {
         height: 100px;
@@ -96,28 +101,15 @@
     &__div {
       flex-direction: column;
       background: #fff;
-      border-radius: 25px;
       margin-bottom: 40px;
       box-shadow: 1px 1px 25px -5px;
       padding: 10px;
       display: flex;
       flex-wrap: unset;
-      color: $blue;
-      margin: 0 5%;
 
       &-images {
-        display: flex;
-        flex-wrap: wrap;
-        width: 76%;
-        margin-left: 9%;
       }
       &-button {
-        display: flex;
-        margin-left: 30%;
-        align-items: center;
-        transition: ease 0.4s;
-        color: $blue;
-
         &:hover {
           padding-top: 0;
           transform: scale(1.012);
