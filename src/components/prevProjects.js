@@ -4,7 +4,7 @@ import capstoneImage from "../assets/photos/capstone-mock.png";
 import portfolioImage from "../assets/photos/portfolio.png";
 import particleImage from "../assets/photos/particle.png";
 import gitHub from "../assets/svg/github-logo.svg";
-import liveImage from "../assets/svg/live.svg";
+// import liveImage from "../assets/svg/live.svg";
 
 export default function PrevProjects() {
   const [projects, setProjects] = useState([
