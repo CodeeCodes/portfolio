@@ -331,6 +331,38 @@ body a {
 
 .about__text {
   text-align: center;
+  background: #ffffff;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(#9cdaf0), color-stop(#bce4ff), to(#ffffff));
+  background: linear-gradient(to right, #ffffff, #9cdaf0, #bce4ff, #ffffff);
+  background-clip: text;
+  color: transparent;
+  -webkit-animation: gradient 2s linear infinite alternate;
+          animation: gradient 2s linear infinite alternate;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
 }
 
 @media only screen and (min-width: 1000px) {

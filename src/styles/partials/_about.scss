@@ -8,8 +8,26 @@
   color: $white;
   &__text {
     text-align: center;
+    background: #ffffff; /* fallback for old browsers */
+    background: linear-gradient(to right, #ffffff, #9cdaf0, #bce4ff, #ffffff);
+
+    background-clip: text;
+    color: transparent;
+    animation: gradient 2s linear infinite alternate;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0%;
+    }
   }
 }
+
 @include medium {
   .about {
     height: 660px;
