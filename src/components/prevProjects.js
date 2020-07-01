@@ -8,20 +8,20 @@ import gitHub from "../assets/svg/github-logo.svg";
 
 export default function PrevProjects() {
   const [projects, setProjects] = useState([
-    {
-      image: `${victoryImage}`,
-      url: "https://github.com/CodeeCodes/victorypropertybuyers",
-      liveUrl: "",
-      techStack: "WordPress, PHP, CSS/SASS",
-      summary:
-        "Professional Real Estate WordPress site, created with a custom theme that I programmed using PHP and WordPress. Also utilizing SASS for styling purposes. Using Local by FlyWheel as my local host. And preparing to deploy using BlueHost "
-    },
+    // {
+    //   image: `${victoryImage}`,
+    //   url: "https://github.com/CodeeCodes/victorypropertybuyers",
+    //   liveUrl: "",
+    //   techStack: "WordPress, PHP, CSS/SASS",
+    //   summary:
+    //     "Professional Real Estate WordPress site, created with a custom theme that I programmed using PHP and WordPress. Also utilizing SASS for styling purposes. Using Local by FlyWheel as my local host. And preparing to deploy using BlueHost "
+    // },
     {
       image: `${capstoneImage}`,
       url: "https://github.com/CodeeCodes/capstone-codee-palmer",
       techStack: "React, NodeJS, ExpressJS, MongoDb",
       summary:
-        "  Sprint is an app, which allows anyone new to a city or new to the exercise world, connecting people in Vancouver about running routes around the city. See what people say about that route and follow yourself as you run these routes. Have up to date weather conditions and join the chat board to organize meetups and look up local races and runs around Vancouver .This is an app based around getting people moving with confidence and hopefully get like minded people connected."
+        "  Sprint is an app, which allows anyone new to a city or new to the exercise world, connecting people in Vancouver about running routes around the city. See what people say about that route and follow yourself as you run these routes. Have up to date weather conditions and join the chat board to organize meetups and look up local races and runs around Vancouver .This is an app based around getting people moving with confidence and hopefully get like minded people connected.",
     },
     {
       image: `${portfolioImage}`,
@@ -29,7 +29,7 @@ export default function PrevProjects() {
       liveUrl: "https://www.codeecodes.com/",
       techStack: "React, CSS, Github Pages",
       summary:
-        "My first portfolio created using ReactJS and published using Github Pages. Using my foundations learnt at BrainStation Vancouver, I've built my portfolio to showcase my skills"
+        "My first portfolio created using ReactJS and published using Github Pages. Using my foundations learnt at BrainStation Vancouver, I've built my portfolio to showcase my skills",
     },
     {
       image: `${particleImage}`,
@@ -37,12 +37,12 @@ export default function PrevProjects() {
       liveUrl: "https://codeecodes.github.io/particle-background/",
       techStack: "vanillaJS, CSS, Github Pages",
       summary:
-        "A background animation of particles being connected. This was created with JavaScript and a JS library p5.JS. I'm exploring libraries and refreshing my JS skills"
-    }
+        "A background animation of particles being connected. This was created with JavaScript and a JS library p5.JS. I'm exploring libraries and refreshing my JS skills",
+    },
   ]);
   const [current, setCurrent] = useState(projects[0]);
   const [active, setActive] = useState(0);
-  const handleSetClick = event => {
+  const handleSetClick = (event) => {
     setCurrent(projects[event.target.getAttribute("data-projects")]);
     setActive(event.target.getAttribute("data-projects"));
     let click = document.querySelector(".slider__button");
@@ -88,10 +88,10 @@ export default function PrevProjects() {
         </div>
       </div>
       <div className="slider">
-        {Object.keys(projects).map(index => {
+        {Object.keys(projects).map((index) => {
           return (
             <span
-              onClick={event => handleSetClick(event)}
+              onClick={(event) => handleSetClick(event)}
               data-projects={index}
               key={index}
               className="slider__button"
