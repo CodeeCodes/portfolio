@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import victoryImage from "../assets/photos/victoryPropertyBuyersMockup.png";
 import capstoneImage from "../assets/photos/capstone-mock.png";
 import portfolioImage from "../assets/photos/portfolio.png";
 import particleImage from "../assets/photos/particle.png";
@@ -37,8 +36,8 @@ export default function PrevProjects() {
   const handleSetClick = (event) => {
     setCurrent(projects[event.target.getAttribute("data-projects")]);
     setActive(event.target.getAttribute("data-projects"));
-    let click = document.querySelector(".slider__button");
-    click.classList.toggle("active");
+    // let click = document.querySelector(".slider__button");
+    // click.classList.toggle(active);
   };
 
   return (
