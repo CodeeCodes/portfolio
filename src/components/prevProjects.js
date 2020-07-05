@@ -8,14 +8,6 @@ import gitHub from "../assets/svg/github-logo.svg";
 
 export default function PrevProjects() {
   const [projects, setProjects] = useState([
-    // {
-    //   image: `${victoryImage}`,
-    //   url: "https://github.com/CodeeCodes/victorypropertybuyers",
-    //   liveUrl: "",
-    //   techStack: "WordPress, PHP, CSS/SASS",
-    //   summary:
-    //     "Professional Real Estate WordPress site, created with a custom theme that I programmed using PHP and WordPress. Also utilizing SASS for styling purposes. Using Local by FlyWheel as my local host. And preparing to deploy using BlueHost "
-    // },
     {
       image: `${capstoneImage}`,
       url: "https://github.com/CodeeCodes/capstone-codee-palmer",
